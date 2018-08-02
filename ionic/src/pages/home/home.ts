@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { DetailPage } from './../detail/detail';
 
@@ -14,11 +14,9 @@ export class HomePage {
 
   notes: Array<any>;
 
-  constructor(public navCtrl: NavController, private modalCtrl: ModalController) {
-    let arr = [];
-    firebase.database().ref('/').on('value', res => {
-       arr = res.val().notes
-       this.notes = arr;
+  constructor(public navCtrl: NavController) {
+    firebase.database().ref('/notes').on('value', res => {
+      this.notes = res.val()
     })
   }
 

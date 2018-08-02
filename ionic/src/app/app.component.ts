@@ -7,28 +7,24 @@ import { HomePage } from '../pages/home/home';
 
 import * as firebase from 'firebase';
 
-const config = {
-  apiKey: "AIzaSyABZlHOrmjuVgebZkg7RJR9cCrnRoK_rFA",
-  authDomain: "manga-209c3.firebaseapp.com",
-  databaseURL: "https://manga-209c3.firebaseio.com",
-  projectId: "manga-209c3",
-  storageBucket: "manga-209c3.appspot.com",
-  messagingSenderId: "194858820921"
-};
+import {firebaseEnvironment} from './firebase-environment';
 
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
+
   rootPage: any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
     platform.ready().then(() => {
       statusBar.styleDefault();
       splashScreen.hide();
     });
 
-    firebase.initializeApp(config);
+    firebase.initializeApp(firebaseEnvironment.firebase);
 
   }
 
