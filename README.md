@@ -4,7 +4,7 @@
 - Sorachai Yotkanto
 - Somrutai kongsri
 - jay      yodsang
-- Rattanaphon Khamnak
+- Rattanaphon Khamnak (Product Owner)
 - jakkrit lomkeaw
 
 ## Project Description
