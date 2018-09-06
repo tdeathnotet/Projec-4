@@ -9,3 +9,7 @@
 
 ## Project Description
 เว็บหอพัก
+
+Scrum Board URL
+
+https://trello.com/b/iQECJdVD
