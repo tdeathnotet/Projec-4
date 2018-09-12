@@ -1,0 +1,32 @@
+/* width */
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.table td, .table th {
+    overflow: inherit !important;
+    width: auto;
+}
+
+input {
+    direction: rtl;
+}
